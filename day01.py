@@ -1,4 +1,7 @@
+#!/usr/bin/env python3
+
 from itertools import combinations
+from math import prod
 
 SUM_TO = 2020
 
@@ -9,15 +12,15 @@ def load_input(filename):
 
 
 def find_two_entry_product(report):
-    for entry in report:
-        if SUM_TO - entry in report:
-            return entry * (SUM_TO - entry)
+    for pair in combinations(report, 2):
+        if sum(pair) == SUM_TO:
+            return prod(pair)
 
 
 def find_three_entry_product(report):
-    for entry1, entry2 in combinations(report, 2):
-        if SUM_TO - entry1 - entry2 in report:
-            return entry1 * entry2 * (SUM_TO - entry1 - entry2)
+    for triple in combinations (report, 3):
+        if sum(triple) == SUM_TO:
+            return prod(triple)
 
 
 if __name__ == "__main__":
