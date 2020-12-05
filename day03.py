@@ -52,6 +52,9 @@ if __name__ == "__main__":
     print(f"Part 2: {map.trees_product([(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)])}")
 
 
+# ~~~ Tests ~~~ #
+
+
 TEST_INPUT = [
     "..##.......",
     "#...#...#..",

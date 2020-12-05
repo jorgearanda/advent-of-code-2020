@@ -23,6 +23,9 @@ if __name__ == "__main__":
     print(f"Part 2: {find_match_product(report, 3)}")
 
 
+# ~~~ Tests ~~~ #
+
+
 def test_sample_part_1():
     report = [1721, 979, 366, 299, 675, 1456]
     assert find_match_product(report, 2) == 514579

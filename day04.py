@@ -86,6 +86,9 @@ if __name__ == "__main__":
     print(f"Part 2: {valid_passports_in_batch(input_batch, strict=True)}")
 
 
+# ~~~ Tests ~~~ #
+
+
 def test_valid_passport():
     p = Passport(
         [

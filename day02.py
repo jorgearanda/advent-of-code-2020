@@ -40,6 +40,9 @@ if __name__ == "__main__":
     print(f"Part 1: {valid_passwords(passwords, method=2)}")
 
 
+# ~~~ Tests ~~~ #
+
+
 def test_password_init():
     p = Password("1-3 a: abcde")
     assert p.low == 1
