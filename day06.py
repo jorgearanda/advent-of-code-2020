@@ -34,7 +34,7 @@ def load_input(filename):
 if __name__ == "__main__":
     input_batch = load_input("day06_input.txt")
     print(f"Part 1: {yes_count_in_batch(input_batch, method='any')}")
-    print(f"Part 1: {yes_count_in_batch(input_batch, method='all')}")
+    print(f"Part 2: {yes_count_in_batch(input_batch, method='all')}")
 
 
 # ~~~ Tests ~~~ #
